@@ -24,7 +24,7 @@ const FoodSection = () => {
   };
   useEffect(() => {
     fetch(
-      "http://www.api.technicaltest.quadtheoryltd.com/api/Item?page=1&pageSize=10"
+      "//www.api.technicaltest.quadtheoryltd.com/api/Item?page=1&pageSize=10"
     )
       .then((res) => res.json())
       .then((data) => setItems(data.Items))
