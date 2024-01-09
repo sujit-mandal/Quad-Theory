@@ -24,7 +24,7 @@ const FoodSection = () => {
   };
   useEffect(() => {
     fetch(
-      "//www.api.technicaltest.quadtheoryltd.com/api/Item?page=1&pageSize=10"
+      "http://www.api.technicaltest.quadtheoryltd.com/api/Item?page=1&pageSize=10"
     )
       .then((res) => res.json())
       .then((data) => setItems(data.Items))
@@ -130,9 +130,7 @@ const FoodSection = () => {
 
       <AddItem
         isOpen={isOpen}
-        setIsOpen={setIsOpen}
         closeModal={closeModal}
-        openModal={openModal}
       ></AddItem>
     </div>
   );
